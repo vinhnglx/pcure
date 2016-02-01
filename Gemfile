@@ -27,6 +27,9 @@ gem 'rubocop'
 gem 'saddler'
 gem 'saddler-reporter-github'
 
+##### Image uploader #####
+gem 'carrierwave'
+
 group :development, :test do
   ##### Debugging #####
   gem 'awesome_print'
