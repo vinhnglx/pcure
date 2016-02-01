@@ -20,5 +20,10 @@
   <%= image_tag(@product.photo) if @product.photo.present? %>
 </p>
 
+<p>
+  <strong>PDF:</strong>
+  <%= link_to "display using the full viewer", pdfjs.minimal_path(file: "#{@product.attachment_file}") if @product.attachment_file.present? %>
+</p>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
