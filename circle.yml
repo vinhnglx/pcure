@@ -4,6 +4,7 @@ machine:
 database:
   override:
     - mv config/database.ci.yml config/database.yml
+    - mv config/application.yml.sample config/application.yml
     - bundle exec rake db:create db:migrate --trace
 test:
   pre:
