@@ -19,4 +19,13 @@ class Product < ActiveRecord::Base
   # Uploader
   mount_uploader :photo, PhotoUploader
   mount_uploader :attachment_file, AttachmentUploader
+
+  # Query methods
+  def attachment_file?
+    attachment_file.present?
+  end
+
+  def photo?
+    photo.present?
+  end
 end
