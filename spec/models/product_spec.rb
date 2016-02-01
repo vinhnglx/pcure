@@ -4,7 +4,7 @@
 #
 #  id          :integer          not null, primary key
 #  title       :string
-#  description :string
+#  description :text
 #  price       :float
 #  photo       :string
 #  created_at  :datetime         not null

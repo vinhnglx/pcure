@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id          :integer          not null, primary key
+#  title       :string
+#  description :text
+#  price       :float
+#  photo       :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
