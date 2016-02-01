@@ -18,3 +18,7 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore database and secret configurations
+/config/database.yml
+/config/secrets.yml
