@@ -22,3 +22,6 @@
 # Ignore database and secret configurations
 /config/database.yml
 /config/secrets.yml
+
+# Ignore public/uploads
+/public/uploads

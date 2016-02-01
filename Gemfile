@@ -31,9 +31,11 @@ gem 'rubocop'
 ##### Automate Code Review #####
 gem 'saddler'
 gem 'saddler-reporter-github'
+gem 'pdfjs_viewer-rails'
 
 ##### Image uploader #####
 gem 'carrierwave'
+gem 'fog'
 
 group :development, :test do
   ##### Debugging #####

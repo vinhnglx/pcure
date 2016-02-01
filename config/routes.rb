@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :products
   resources :products
   resources :products, except: [:new, :edit]
+  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
+  root 'products#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

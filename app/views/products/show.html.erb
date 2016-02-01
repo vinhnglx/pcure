@@ -17,7 +17,12 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @product.photo %>
+  <%= image_tag(@product.photo) if @product.photo? %>
+</p>
+
+<p>
+  <strong>PDF:</strong>
+  <%= link_to "Click here to read the pdf", pdfjs.minimal_path(file: "#{@product.attachment_file}") if @product.attachment_file? %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

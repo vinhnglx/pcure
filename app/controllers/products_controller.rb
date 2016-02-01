@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id              :integer          not null, primary key
+#  title           :string
+#  description     :text
+#  price           :float
+#  photo           :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  attachment_file :string
+#
+
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
@@ -79,6 +93,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :price, :photo)
+      params.require(:product).permit(:title, :description, :price, :photo, :attachment_file)
     end
 end

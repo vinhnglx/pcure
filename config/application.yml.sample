@@ -1,0 +1,5 @@
+AWS_ACCESS_KEY: 'xxxxxxxxxxxxxx'
+AWS_SECRET_KEY: 'xxxxxxxxxxxxxx'
+AWS_REGION: 'xxxxxxx'
+AWS_BUCKET: 'xxxxxxx'
+AWS_EXPIRATION_TIME: '300'
