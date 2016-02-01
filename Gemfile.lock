@@ -250,6 +250,9 @@ GEM
       sawyer (~> 0.6.0, >= 0.5.3)
     parser (2.3.0.2)
       ast (~> 2.2)
+    pdfjs_viewer-rails (0.0.6)
+      rails (~> 4.2.0)
+      sass-rails (~> 5.0)
     powerpack (0.1.1)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -414,6 +417,7 @@ DEPENDENCIES
   figaro
   fog
   jquery-rails
+  pdfjs_viewer-rails
   pry-byebug
   rails (= 4.2.5)
   rails_best_practices
