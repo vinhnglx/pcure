@@ -34,6 +34,7 @@ gem 'saddler-reporter-github'
 
 ##### Image uploader #####
 gem 'carrierwave'
+gem 'fog'
 
 group :development, :test do
   ##### Debugging #####
