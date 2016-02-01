@@ -3,7 +3,12 @@ source 'https://rubygems.org'
 ruby '2.2.2'
 
 gem 'rails', '4.2.5'
-gem 'rails-api'
+
+##### Assets #####
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
 
 ##### Database #####
 gem 'sqlite3'
@@ -27,6 +32,9 @@ gem 'rubocop'
 gem 'saddler'
 gem 'saddler-reporter-github'
 
+##### Image uploader #####
+gem 'carrierwave'
+
 group :development, :test do
   ##### Debugging #####
   gem 'awesome_print'
@@ -37,6 +45,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'spring'
+  gem 'ffaker'
 end
 
 group :test do
