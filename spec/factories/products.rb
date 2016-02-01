@@ -18,5 +18,4 @@ FactoryGirl.define do
     price { Random.new.rand(400) }
     photo { FFaker::Avatar.image }
   end
-
 end
