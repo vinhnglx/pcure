@@ -14,4 +14,7 @@
 class Product < ActiveRecord::Base
   # Validations
   validates :title, :price, presence: true
+
+  # Uploader
+  mount_uploader :photo, PhotoUploader
 end
