@@ -2,13 +2,14 @@
 #
 # Table name: products
 #
-#  id          :integer          not null, primary key
-#  title       :string
-#  description :text
-#  price       :float
-#  photo       :string
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id              :integer          not null, primary key
+#  title           :string
+#  description     :text
+#  price           :float
+#  photo           :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  attachment_file :string
 #
 
 require 'rails_helper'
@@ -29,18 +30,10 @@ RSpec.describe Product, type: :model do
       product = create(:product, price: 23.33)
       expect(product).to have_attributes(price: 23.33)
     end
-
-    it 'has price' do
-      product = create(:product, photo: 'http://example.com/hello.jpg')
-      expect(product).to have_attributes(photo: 'http://example.com/hello.jpg')
-    end
   end
 
   context 'validations' do
     it { should validate_presence_of :title }
     it { should validate_presence_of :price }
-  end
-
-  context 'relations' do
   end
 end
